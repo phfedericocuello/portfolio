@@ -8,7 +8,7 @@
 body {
     .parallax {
         /* The image used */
-        background-image: url('../media/fondo_2.jpg');
+        background-image: url('../media/fondo_1.png');
         /* Full height */
         height: 1000px;
         /* Create the parallax scrolling effect */
@@ -37,19 +37,20 @@ body {
                         a {
                             color: white;
                             text-decoration: none;
+                            font-size: 150%;
                         }
                     }
                 }
             }
         }
         img {
-            width: 150px;
-            height: auto;
-            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            border-radius: 150px;
             margin-top: 10%;
         }
         h1 {
-            color: rgb(216, 135, 0);
+            color: $mainRed;
             font-size: 400%;
         }
         h5 {
@@ -62,8 +63,70 @@ body {
             color: white;
         }
     }
-    .relleno {
-        height: 1000px;
+    .about {
+        height: 800px;
         background-color: $mainBlue;
+        display: flex;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        .ab-imagen {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            img {
+                height: 500px;
+                width: auto;
+                border: 5px solid;
+            }
+        }
+        .ab-contenido {
+            flex-basis: 50%;
+            padding: 0% 15% 0% 5%;
+            color: white;
+            .ab-contenido-titulo {
+                hr {
+                    width: 130px;
+                    color: $mainRed;
+                    height: 2px;
+                }
+            }
+            .ab-contenido-info {
+                display: flex;
+                margin-top: 10%;
+                border: 1px solid;
+                border-color: $mainRed;
+                border-radius: 1%;
+                padding: 3%;
+                height: 40%;
+                gap: 100px;
+                .info-left {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 50%;
+                    justify-content: space-around;
+                    word-spacing: 5px;
+                    p {
+                        margin: 0;
+                    }
+                }
+                .info-rigth {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 50%;
+                    justify-content: space-around;
+                    word-spacing: 5px;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            .btn-descargar {
+                margin-top: 10%;
+                .link-descargar {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
     }
 }

@@ -59,14 +59,8 @@ body .parallax header nav ul li a {
   font-size: 150%;
 }
 
-body .parallax img {
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  margin-top: 10%;
-}
-
 body .parallax h1 {
+  margin-top: 20%;
   color: #ff4f4f;
   font-size: 400%;
 }
@@ -180,5 +174,164 @@ body .about .ab-contenido .btn-descargar {
 body .about .ab-contenido .btn-descargar .link-descargar {
   text-decoration: none;
   color: white;
+}
+
+body .servicios {
+  background-color: #1F2233;
+  color: white;
+  padding: 5%;
+}
+
+body .servicios .se-contenido-titulo hr {
+  width: 130px;
+  color: #ff4f4f;
+  height: 2px;
+}
+
+body .servicios .se-contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+  gap: 10%;
+}
+
+body .servicios .se-contenido .card {
+  background-color: #1F2233;
+  height: 30%;
+  border-color: #ff4f4f;
+  min-height: 300px;
+}
+
+body .servicios .se-contenido .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .servicios .se-contenido .card img {
+  width: 20%;
+  height: auto;
+}
+
+body .servicios .collapse .contenedorCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+  gap: 10%;
+}
+
+body .servicios .collapse .contenedorCards .card {
+  background-color: #1F2233;
+  height: 30%;
+  border-color: #ff4f4f;
+  min-height: 300px;
+}
+
+body .servicios .collapse .contenedorCards .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .servicios .collapse .contenedorCards .card img {
+  width: 20%;
+  height: auto;
+}
+
+body .servicios .btn-verMas {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 0% 0% 45%;
+}
+
+body .parallax-division {
+  /* The image used */
+  background-image: url("../media/fondo_1.png");
+  /* Full height */
+  height: 150px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .portfolio {
+  background-color: #323852;
+  padding: 5%;
+  color: white;
+}
+
+body .portfolio .port-titulo hr {
+  width: 130px;
+  color: #ff4f4f;
+  height: 2px;
+}
+
+body .portfolio .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+  overflow-x: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 5%;
+}
+
+body .portfolio .items .card {
+  background-color: #323852;
+  height: 30%;
+  width: 500px;
+  border-color: #ff4f4f;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+body .portfolio .items .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .portfolio .items .card img {
+  width: 20%;
+  height: auto;
+}
+
+body footer {
+  background-color: #1F2233;
+  height: 30px;
+  color: #ff4f4f;
+  text-align: center;
+}
+
+body footer p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

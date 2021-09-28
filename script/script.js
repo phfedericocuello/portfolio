@@ -1,3 +1,4 @@
+const button = document.querySelector('.btn-Updater')
 const slider = document.querySelector('.items');
 let isDown = false;
 let startX;
@@ -34,4 +35,16 @@ window.addEventListener('load', () => {
             portContainer.scrollTo(portContainer.scrollLeft + 1, 0);
         }
     }, 50);
+});
+
+
+var boton = 1;
+button.addEventListener('click', () => {
+    if (boton == 1) {
+        button.innerHTML = 'Ver Menos Servicios';
+        boton -= 1;
+    } else if (boton == 0) {
+        button.innerHTML = 'Ver Mas Servicios';
+        boton += 1;
+    }
 });

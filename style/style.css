@@ -215,6 +215,7 @@ body .servicios .se-contenido .card .card-body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 500px;
 }
 
 body .servicios .se-contenido .card img {
@@ -249,6 +250,7 @@ body .servicios .collapse .contenedorCards .card .card-body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 500px;
 }
 
 body .servicios .collapse .contenedorCards .card img {
@@ -303,8 +305,9 @@ body .portfolio .items .card {
   height: 30%;
   width: 500px;
   border-color: #ff4f4f;
-  min-height: 300px;
-  min-width: 300px;
+  min-height: 550px;
+  min-width: 600px;
+  padding: 0.5%;
 }
 
 body .portfolio .items .card .card-body {
@@ -319,19 +322,93 @@ body .portfolio .items .card .card-body {
           flex-direction: column;
 }
 
+body .portfolio .items .card .btn {
+  width: 100%;
+}
+
 body .portfolio .items .card img {
-  width: 20%;
+  width: 100%;
   height: auto;
 }
 
-body footer {
+body .skills {
   background-color: #1F2233;
-  height: 30px;
-  color: #ff4f4f;
-  text-align: center;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 700px;
 }
 
-body footer p {
-  margin: 0;
+body .skills .skills-titulo h2 {
+  color: #efefef;
+}
+
+body .skills .skills-titulo hr {
+  width: 130px;
+  color: #ff4f4f;
+  height: 2px;
+}
+
+body .skills .skills-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 500px;
+  gap: 100px;
+  padding-top: 5%;
+}
+
+body .skills .skills-flex div {
+  height: 300px;
+  width: 150px;
+  border: solid 1px;
+  border-radius: 2%;
+  border-color: #ff4f4f;
+}
+
+body .skills .skills-flex div p {
+  color: #efefef;
+  text-align: center;
+  margin-top: 10px;
+}
+
+body footer {
+  background-color: #323852;
+  height: 70px;
+  color: #ff4f4f;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer .marcaHeader {
+  color: #ff4f4f;
+  font-size: 200%;
+  margin-top: 15px;
+}
+
+body footer .marcaHeader span {
+  color: #efefef;
+}
+
+body footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+body footer .redes a img {
+  height: 30px;
+  width: 30px;
 }
 /*# sourceMappingURL=style.css.map */

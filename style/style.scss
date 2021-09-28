@@ -149,6 +149,7 @@ body {
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
+                    max-width: 500px;
                 }
                 img {
                     width: 20%;
@@ -171,6 +172,7 @@ body {
                         display: flex;
                         justify-content: space-around;
                         flex-direction: column;
+                        max-width: 500px;
                     }
                     img {
                         width: 20%;
@@ -217,27 +219,85 @@ body {
                 height: 30%;
                 width: 500px;
                 border-color: $mainRed;
-                min-height: 300px;
-                min-width: 300px;
+                min-height: 550px;
+                min-width: 600px;
+                padding: 0.5%;
                 .card-body {
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
                 }
+                .btn {
+                    width: 100%;
+                }
                 img {
-                    width: 20%;
+                    width: 100%;
                     height: auto;
                 }
             }
         }
     }
-    footer {
+    .skills {
         background-color: $mainBlue;
-        height: 30px;
+        padding: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        .skills-titulo {
+            h2 {
+                color: $white;
+            }
+            hr {
+                width: 130px;
+                color: $mainRed;
+                height: 2px;
+            }
+        }
+        .skills-flex {
+            display: flex;
+            flex-wrap: wrap;
+            height: 500px;
+            gap: 100px;
+            padding-top: 5%;
+            div {
+                height: 300px;
+                width: 150px;
+                border: solid 1px;
+                border-radius: 2%;
+                border-color: $mainRed;
+                p {
+                    color: $white;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: $secondaryBlue;
+        height: 70px;
         color: $mainRed;
         text-align: center;
-        p {
-            margin: 0;
+        display: flex;
+        justify-content: space-around;
+        .marcaHeader {
+            color: $mainRed;
+            font-size: 200%;
+            margin-top: 15px;
+            span {
+                color: $white;
+            }
+        }
+        .redes {
+            display: flex;
+            gap: 50px;
+            margin-top: 15px;
+            a {
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
         }
     }
 }
